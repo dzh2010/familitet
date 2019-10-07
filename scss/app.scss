@@ -24,12 +24,92 @@
   font-display: fallback;
 }
 // colors
+$site-heath: #FFFCE4;
+$site-ruby: #D71C6D;
+$site-chocolate: #59361B;
+$site-cinnabar: #DB4C3B;
+$site-malibu: #61ACDE;
+$site-beige: #F7F8E2;
+$site-serenade: #FDEBDB;
+$site-selago: #F7F1F8;
+$site-gulfstream: #70B4A7;
+$site-yellow: #F7A93B;
+$site-rosebud: #F4A699;
 
+$primary: $site-ruby;
+$secondary: $site-malibu;
+
+$theme-colors: (
+    "site-heath": $site-heath,
+    "site-ruby": $site-ruby,
+    "site-chocolate": $site-chocolate,
+    "site-cinnabar": $site-cinnabar,
+    "site-malibu": $site-malibu,
+    "site-beige": $site-beige,
+    "site-serenade": $site-serenade,
+    "site-selago": $site-selago,
+    "site-gulfstream": $site-gulfstream,
+    "site-yellow": $site-yellow,
+    "site-rosebud": $site-rosebud
+);
 // variables
-$font-family-base: "Helios";
-$font-weight-normal: 300;
-// classes
+$body-color: $site-chocolate;
 
+$font-weight-normal: 300;
+$font-weight-bolder: 700;
+$font-family-base: "Helios";
+
+$headings-font-family: "AntiQuasi";
+
+$link-color: $site-malibu;
+$link-decoration: underline;
+// classes
+.font-antiquasi {
+    font-family: "AntiQuasi";
+}
+.header {
+    position: relative;
+    padding-bottom: 22px;
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 22px;
+        background-image: url('../img/wave-white-up.png');
+    }
+}
+.top-phones {
+    z-index: 1000;
+}
+.navbar-brand {
+    p {
+        margin-left: 2.5rem !important;
+        line-height: 1.1;
+    }
+}
+.navbar-nav {
+    .nav-item {
+        .nav-link {
+            text-decoration: none;
+            font-family: "AntiQuasi";
+            font-size: 1.5rem;
+            .catalog-menu-item {
+                color: $site-chocolate;
+                span {
+                    letter-spacing: -0.5pt;
+                }
+                small {
+                    color: $site-cinnabar;
+                    text-transform: uppercase;
+                    font-size: 0.85rem !important;
+                    line-height: 1.5;
+                }
+            }
+        }
+    }
+}
 // media specific
 @media (min-width: 576px) { // Small devices (landscape phones, 576px and up)
 
@@ -38,10 +118,21 @@ $font-weight-normal: 300;
 
 }
 @media (min-width: 992px) { // Large devices (desktops, 992px and up)
-
+    .navbar-collapse {
+        padding-top: 80px;
+    }
 }
 @media (min-width: 1200px) { // Extra large devices (large desktops, 1200px and up)
-
+    .navbar-collapse {
+        padding-top: 70px;
+        .navbar-nav {
+            .nav-item {
+                .nav-link {
+                    font-size: 2rem !important;
+                }
+            }
+        }
+    }
 }
 
 @media (max-width: 767.98px) { // Small devices (landscape phones, less than 768px)
