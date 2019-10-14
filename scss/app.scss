@@ -1,24 +1,24 @@
 // fonts
 @font-face {
     font-family: 'Helios';
-    src: url('../fonts/Helios-Light.woff2') format('woff2'),
-        url('../fonts/Helios-Light.woff') format('woff');
+    src: url('../webfonts/Helios-Light.woff2') format('woff2'),
+        url('../webfonts/Helios-Light.woff') format('woff');
     font-weight: 300;
     font-style: normal;
     font-display: fallback;
 }
 @font-face {
     font-family: 'Helios';
-    src: url('../fonts/Helios-Bold.woff2') format('woff2'),
-        url('../fonts/Helios-Bold.woff') format('woff');
+    src: url('../webfonts/Helios-Bold.woff2') format('woff2'),
+        url('../webfonts/Helios-Bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
     font-display: fallback;
 }
 @font-face {
   font-family: 'AntiQuasi';
-  src: url('../fonts/AntiQuasi.woff2') format('woff2'),
-      url('../fonts/AntiQuasi.woff') format('woff');
+  src: url('../webfonts/AntiQuasi.woff2') format('woff2'),
+      url('../webfonts/AntiQuasi.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: fallback;
@@ -60,25 +60,15 @@ $font-weight-bolder: 700;
 $font-family-base: "Helios";
 
 $headings-font-family: "AntiQuasi";
+$headings-line-height: 1.1;
+
+$small-font-size: 85%;
 
 $link-color: $site-malibu;
 $link-decoration: underline;
 // classes
 .font-antiquasi {
     font-family: "AntiQuasi";
-}
-.header {
-    position: relative;
-    padding-bottom: 22px;
-    &::after {
-        content: '';
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        height: 22px;
-        background-image: url('../img/wave-white-up.png');
-    }
 }
 .top-phones {
     z-index: 1000;
@@ -94,10 +84,10 @@ $link-decoration: underline;
         .nav-link {
             text-decoration: none;
             font-family: "AntiQuasi";
-            font-size: 1.5rem;
             .catalog-menu-item {
                 color: $site-chocolate;
-                span {
+                .h2 {
+                    font-size: 1.5rem;
                     letter-spacing: -0.5pt;
                 }
                 small {
@@ -110,6 +100,67 @@ $link-decoration: underline;
         }
     }
 }
+.feature-card {
+    h2 {
+        small {
+            display: block;
+            font-size: 1.25rem;
+            line-height: 1.1;
+        }
+    }
+}
+.header {
+    + div {
+        padding-top: 22px;
+        padding-bottom: 22px;
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            height: 22px;
+            top: 0;
+            left: 0;
+            right: 0;
+            background-repeat: repeat-x;
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            height: 22px;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-image: url('/img/wave-pistachio-up.png');
+            background-repeat: repeat-x;
+        }
+    }
+}
+.header.bg-site-heath {
+    + div {
+        &::before {
+            background-image: url('../img/wave-pink.png');
+        }
+    }
+}
+.footer {
+    position: relative;
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 22px;
+        background-image: url('../img/wave-pistachio.png');
+        background-repeat: repeat-x;
+    }
+    .bottom-pattern {
+        min-height: 262px;
+        background-color: $site-serenade;
+        background-image: url('../img/background-flowers.png');
+        background-repeat: repeat-x;
+    }
+}
 // media specific
 @media (min-width: 576px) { // Small devices (landscape phones, 576px and up)
 
@@ -119,7 +170,14 @@ $link-decoration: underline;
 }
 @media (min-width: 992px) { // Large devices (desktops, 992px and up)
     .navbar-collapse {
-        padding-top: 80px;
+        padding-top: 60px;
+    }
+    .features {
+        overflow: hidden;
+    }
+    .diploma {
+        top: -60px;
+        left: -120px;
     }
 }
 @media (min-width: 1200px) { // Extra large devices (large desktops, 1200px and up)
@@ -128,7 +186,11 @@ $link-decoration: underline;
         .navbar-nav {
             .nav-item {
                 .nav-link {
-                    font-size: 2rem !important;
+                    .catalog-menu-item {
+                        .h2 {
+                            font-size: 2rem !important;
+                        }
+                    }
                 }
             }
         }
