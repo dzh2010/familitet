@@ -73,7 +73,7 @@ $link-decoration: underline;
 .font-antiquasi {
     font-family: "AntiQuasi";
 }
-.top-phones {
+.top-phones, .top-shop {
     z-index: 1000;
 }
 .navbar-brand {
@@ -145,6 +145,16 @@ $link-decoration: underline;
             background-image: url('../img/wave-pink.png');
         }
     }
+}
+.basket-count, .basket-count:hover, .basket-count:focus {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 4px;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+    color: $site-chocolate;
 }
 .schedule-grid {
     display: grid;
