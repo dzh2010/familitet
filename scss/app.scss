@@ -78,7 +78,6 @@ $link-decoration: underline;
 }
 .navbar-brand {
     p {
-        margin-left: 2.5rem !important;
         line-height: 1.1;
     }
 }
@@ -227,6 +226,11 @@ $link-decoration: underline;
 @media (min-width: 992px) { // Large devices (desktops, 992px and up)
     .navbar-collapse {
         padding-top: 60px;
+    }
+    .navbar-brand {
+        p {
+            margin-left: 2.5rem !important;
+        }
     }
     .features {
         overflow: hidden;
