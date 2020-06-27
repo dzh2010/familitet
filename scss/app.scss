@@ -217,6 +217,30 @@ $link-decoration: underline;
         }
     }
 }
+.content {
+    font-size: 1.5rem;
+    p {
+        color: $site-chocolate;
+    }
+    ul {
+        position: relative;
+        padding-left: 1.5rem;
+        li {
+            list-style: none;
+            font-size: 1.25rem;
+            &::before {
+                position: absolute;
+                content: "";
+                left: 0;
+                margin-top: 0.75rem;
+                width: 0.5rem;
+                height: 0.5rem;
+                border-radius: 50%;
+                background-color: $site-yellow;
+            }
+        }    
+    }
+}
 .footer {
     position: relative;
     &::after {
