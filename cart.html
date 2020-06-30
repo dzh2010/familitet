@@ -93,45 +93,72 @@
   <!-- Content start -->
   <div id="content">
     <div class="container py-3">
-      <div class="row">
-        <div class="col-lg-8 pb-3 pb-lg-0 content">
-          <h2 class="h1">Для своего ребенка вы &mdash; самые лучшие мама и папа на свете!</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus corrupti ipsum reprehenderit facere possimus sapiente dolorum? Quo amet laborum rerum!</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus optio dicta nostrum voluptatem ut ratione natus rerum odit magni fuga.</p>
-          <ul>
-            <li>Lorem ipsum dolor sit amet?</li>
-            <li>Lorem ipsum dolor sit amet?</li>
-            <li>Lorem ipsum dolor sit amet?</li>
-          </ul>
-          <a class="lead" href="#">Подробно о нашем центре</a>
+      <h2 class="h1 mb-3">Ваш заказ:</h2>
+      <!-- Cart item start -->
+      <div class="row pb-4 align-items-center">
+        <div class="col-6 col-lg-3">
+          <img src="/img/thumbnail.jpg" alt="" class="img-fluid">
         </div>
-        <!-- Sidebar -->
-        <div class="col-lg-4 pb-3 pb-lg-0">
-          <!-- Side menu -->
-          <ul class="nav nav-online pt-4 pt-lg-2 pl-4 pl-lg-0 flex-column">
-            <li class="nav-item">
-              <a href="#" class="nav-link active">Онлайн. Йога для беременных</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">Онлайн. Йога для мам</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">Онлайн. Мягкие роды</a>
-            </li>
-          </ul>
-          <!-- Side menu 2 -->
-          <h3 class="sidebar-h">Специалисты&nbsp;</h3>
-          <ul class="list-unstyled">
-            <li class="row my-3">
-              <img src="/img/tishina.jpg" alt="" class="img-fluid rounded-circle col-12 col-sm-6">
-              <a href="#" class="h5 col-12 my-2 text-site-chocolate text-decoration-none"><span class="text-uppercase">Ирина</span> Тишина</a>
-            </li>
-            <li class="row my-3">
-              <img src="/img/tishina.jpg" alt="" class="img-fluid rounded-circle col-12 col-sm-6">
-              <a href="#" class="h5 col-12 my-2 text-site-chocolate text-decoration-none"><span class="text-uppercase">Ирина</span> Тишина</a>
-            </li>
-          </ul>
+        <div class="col-6 col-lg-5 h5">Онлайн. Йога для беременных</div>
+        <div class="col-6 col-lg-2 h2">300 &#8381;</div>
+        <div class="col-6 col-lg-2">
+          <button type="button" class="close float-none text-site-ruby" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
         </div>
+      </div>
+      <!-- Cart item end -->
+      <!-- Cart item start -->
+      <div class="row pb-4 align-items-center">
+        <div class="col-6 col-lg-3">
+          <img src="/img/thumbnail.jpg" alt="" class="img-fluid">
+        </div>
+        <div class="col-6 col-lg-5 h5">Онлайн. Йога для беременных</div>
+        <div class="col-6 col-lg-2 h2">300 &#8381;</div>
+        <div class="col-6 col-lg-2">
+          <button type="button" class="close float-none text-site-ruby" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+      </div>
+      <!-- Cart item end -->
+      <hr class="bg-site-ruby">
+    </div>
+    <div class="container">
+      <div class="pb-4 pb-lg-5">
+          <h2 class="h2 text-uppercase">Итого: <span class="text-primary">4800 &#8381;</span></h2>
+          <p>Для оплаты укажите, пожалуйста, Ваши контактные данные</p>
+          <form action="/thanks.html" id="checkoutForm" class="form-inline my-4">
+              <div class="form-group mr-4">
+                  <input type="text" class="form-control border-bottom border-site-rosebud" name="" id="" placeholder="Ваше имя">
+              </div>
+              <div class="form-group mr-4">
+                  <input type="text" class="form-control border-bottom border-site-rosebud" name="" id="" placeholder="Номер телефона">
+              </div>
+              <div class="form-group">
+                  <input type="email" class="form-control border-bottom border-site-rosebud" name="" id="" placeholder="E-mail">
+              </div>
+          </form>
+          <p>Нажимая на кнопку &laquo;Оплатить&raquo;, Вы принимаете условия <a href="#" class="text-site-chocolate">договора оферты</a> и даёте согласие на обработку Ваших персональных данных в соответствии с <a href="#" class="text-site-chocolate">указанными условиями</a></p>
+          <div class="row align-items-center">
+              <div class="col-auto">
+                  <div class="h4 my-3">К оплате принимаются</div>
+              </div>
+              <div class="col-auto px-lg-0">
+                  <img class="mx-1" src="/img/visa.svg" alt="Visa">
+                  <img class="mx-1" src="/img/mastercard.svg" alt="MasterCard">
+                  <img class="mx-1" src="/img/maestro.svg" alt="Maestro">
+                  <img class="mx-1" src="/img/mir.svg" alt="MIR">
+              </div>
+              <div class="col-12 col-lg-auto">
+                  <div class="my-3">и другие <a href="#">способы оплаты</a></div>
+              </div>
+              <div class="col-auto px-lg-0">
+                  <button id="submitCheckoutForm" type="submit" class="btn btn-primary rounded-pill">
+                    <h2 class="my-0 px-3 py-2">Оплатить</h2>
+                  </button>
+              </div>
+          </div>
       </div>
     </div>
   </div>
@@ -153,25 +180,7 @@
           <h2 class="display-4 text-site-ruby">576 <small>дипломов выдано будущим мамам!</small></h2>
         </div>
       </div>
-      <div class="row pt-5 pb-4">
-        <div class="col-12 col-lg-10 col-xl-8 offset-lg-1 offset-xl-2">
-          <form action="">
-            <div class="row no-gutters">
-              <div class="col-sm-6 col-lg-4">
-                <h2 class="display-3">15%</h2>
-                <h3 class="text-uppercase text-site-cinnabar">Скидка</h3>
-                <p>Многодетным семьям, одиноким мамам и родителям-студентам на групповые программы</p>
-              </div>
-              <div class="col-sm-6 col-lg-4 d-flex justify-content-center align-self-center align-self-lg-auto">
-                <div>
-                  <button type="submit" class="btn btn-primary rounded-pill">
-                    <h2 class="my-0 px-3 py-2">Записаться!</h2>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </form>
-        </div>
+      <div class="row pt-4">
       </div>
     </div>
   </div>

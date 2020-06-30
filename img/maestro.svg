@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW 2018 (64-Bit) -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="50px" height="50px" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 50 50"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .fil3 {fill:#00A1DF}
+    .fil1 {fill:#7673C0}
+    .fil2 {fill:#EB001B}
+    .fil0 {fill:black;fill-opacity:0.121569}
+   ]]>
+  </style>
+ </defs>
+ <g id="maestro">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <g id="_2328814913856">
+   <path class="fil0" d="M25 50c13.81,0 25,-11.19 25,-25 0,-13.81 -11.19,-25 -25,-25 -13.81,0 -25,11.19 -25,25 0,13.81 11.19,25 25,25z"/>
+   <g>
+    <rect class="fil1" x="20.48" y="17.23" width="8.97" height="16.13"/>
+    <path class="fil2" d="M21.05 25.3c0,-3.15 1.44,-6.13 3.92,-8.07 -4.21,-3.3 -10.25,-2.82 -13.87,1.11 -3.63,3.93 -3.63,9.98 0,13.91 3.62,3.93 9.66,4.41 13.87,1.11 -2.48,-1.94 -3.92,-4.92 -3.92,-8.06l0 0z"/>
+    <path class="fil3" d="M41.56 25.3c0,3.92 -2.24,7.5 -5.77,9.22 -3.53,1.71 -7.73,1.26 -10.82,-1.16 2.47,-1.95 3.92,-4.92 3.92,-8.06 0,-3.15 -1.45,-6.13 -3.92,-8.07 3.09,-2.43 7.29,-2.88 10.82,-1.16 3.53,1.71 5.77,5.3 5.77,9.22l0 0.01z"/>
+   </g>
+  </g>
+ </g>
+</svg>
